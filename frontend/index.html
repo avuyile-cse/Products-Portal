@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>vProducts</title>
+		<!--<link rel="stylesheet" href= "./static/css/style.css">-->
+		<style>
+			body{
+				background-color: white;
+				background: linear-gradient(234deg,cornsilk,#0FFFF9);
+				margin: 0;
+				margin-top: 0;
+				padding: 40px;
+				min-height: 100vh;
+							
+			}
+			.main-container{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top:0px auto;
+				width: 90%;
+				gap: 25px;
+			}
+			.grid-container{
+				display: grid;
+				grid-template-columns: repeat(3,1fr);
+				gap:30px;
+				width:auto;
+				max-width: 700px;
+			}
+			.grid-item {
+				background-color: DarkSalmon;
+				width: 140px;
+				height: 30px;
+				border-radius:-19px;
+				border:2px solid transparent;
+				border-color:grey;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 60px;
+
+				text-align: center;
+				font-weight: light;
+				font-size: 1.8rem;
+				cursor: pointer;
+				transition: all 0.3s ease;
+			}
+			.grid-item:hover {
+				transform: translateY(-10px) scale(1.03);
+				background-color: cadetblue;
+				box-shadow: 0 10px 15px rgba(0,0,2,0.3);
+				color:white;
+			}
+			.grid-item:active{
+				transform: scale(0.96);
+			}
+			.image{
+				border: 3px solid black;
+				border-radius: 5px;
+				display:block;
+				margin: 0 auto;
+				height: 100px;
+				width: 200px;
+				border-radius:12px;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			.image:hover{
+				transform: scale(1.02);
+				box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+				cursor:pointer;
+				border-color: coral;
+				box-shadow: 0 0 10px rgba(0,0,0,5);
+			}
+			.card-icon {
+				width: 70px;
+				height: 70px;
+				filter: greyscale(100%);
+				object-fit: contain;
+				transition: transform 0.3s ease, filter 0.3s ease;
+			}
+			.grid-item:hover .card-icon{
+				filter: brightness(1.2);
+				transform: scale(1.15) rotate(0deg);
+			}
+			.page-title{
+				text-align: center;
+				font_size: 3rem;
+				font-weight: bold;
+				color: blue;
+				margin-bottom: 50px;
+				margin-top: 0;			
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1 class ="page-title">
+			Products-Portal
+		</h1>
+		<div class="main-container">
+		
+			<div class = "grid-container">
+				<div class = "grid-item">
+					<img src="./static/icons/num_1.png" class="card-icon" alt="Click n Collect icon">
+					<span>CNC</span>
+				</div>
+				
+				<div class = "grid-item">
+					<img src="./static/icons/num_1.png" class = "card-icon" alt="Drop n Shop icon">
+					<span>DNS</span>
+				</div>
+				
+				<div class = "grid-item">
+					<img src="./static/icons/num_1.png" class = "card-icon" alt="Drop n Play icon">
+					<span>DNP</span>
+				</div>
+					
+				<div class = "grid-item">
+					<img src="./static/icons/num_1.png"" class="card-icon" alt="Tap n Pay icon">
+					<span>TNP</span>
+				</div>	
+				
+				<div class = "grid-item">
+					<img src="./static/icons/num_1.png" class="card-icon" alt="ShoeBox icon">
+					<span>ShoeBox</span>
+				</div>
+				
+				<div class = "grid-item">
+					<img src="./static/icons/num_1.png" class="card-icon" alt="Drop n Shop icon">
+					<span>DND</span>
+				</div>
+				
+				<div class = "grid-item">
+					<img src="./static/icons/num_1.png" class="card-icon" alt="Cellvault icon">
+					<span>CV</span>
+				</div>
+				<div class = "grid-item">
+					<img src="./static/icons/num_1.png" class="card-icon" alt="Auto-Vault icon">
+					<span>AV</span>
+				</div>
+				
+				<div class = "grid-item">
+					<img src="./static/icons/num_1.png" class="card-icon" alt="Smart lockers icon">
+					<span>SM</span>
+				</div>
+				<!--
+				<div class = "grid-item">
+					<img src="./static/icons/num_1.png" class="card-icon" alt="Suggestions icon">
+					<span>Suggestions</span>
+				</div>
+				-->
+			</div>
+		
+	</div>
+	
+	</body>
+</html>
