@@ -23,6 +23,6 @@ environment across the organization.
 # Features
 - Product catalog
 
-# STATUS: Actively in progress
+# STATUS:  in progress
   Timel line: 22 May 2026 - 31 May 2026
 	- POC
